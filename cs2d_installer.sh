@@ -68,13 +68,13 @@ wget -q http://www.unrealsoftware.de/files_pub/cs2d_dedicated_linux.zip
 unzip cs2d_dedicated_linux.zip
 
 msg "Downloading CS2D Windows archive..."
-#wget http://www.sendbox.fr/5ab1d7497e2348c7/cs2d_1002_win.zip
-#unzip cs2d_1002_win.zip
+wget http://www.sendbox.fr/5ab1d7497e2348c7/cs2d_1002_win.zip
+unzip cs2d_1002_win.zip
 
 msg "Clean up"
 rm -f "Dedicated Readme.txt"
 rm -f cs2d_dedicated_linux.zip
-#rm -f cs2d_1002_win.zip
+rm -f cs2d_1002_win.zip
 
 msg "CS2D Server has been installed"
 msg "If you have any problems report them on usgn.de"
