@@ -95,6 +95,7 @@ then
 	exit 0
 fi
 
+msg "Downloading mappack..."
 wget http://www.sendbox.fr/2239380f9189806b/mappack.zip
 unzip mappack.zip
 rm -f mappack.zip
