@@ -71,21 +71,20 @@ msg "Downloading CS2D Files..."
 wget https://github.com/codneutro/cs2d_installer/archive/master.zip
 unzip master.zip
 
+cd cs2d_installer-master
+cp -rf * ..
+cd ..
+
 msg "Clean up"
+
 rm -f "Dedicated Readme.txt"
+rm -f README.md
 rm -f cs2d_dedicated_linux.zip
 rm -f master.zip
+rm -rf cs2d_installer-master
+rm -f cs2d_installer.sh
 
 msg "CS2D Server has been installed"
 msg "If you have any problems report them on usgn.de"
-
-msg "Would you like to configure your server ? [Y/n]:"
-read continue
-if [ $continue != 'Y' ] && [ $continue != 'y' ]
-then
-	exit 0
-fi
-
-nano sys/server.cfg
 
 exit 0
