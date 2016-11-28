@@ -84,6 +84,8 @@ rm -f master.zip
 rm -rf cs2d_installer-master
 rm -f cs2d_installer.sh
 
+chmod -R 777 .
+
 msg "CS2D Server has been installed"
 msg "If you have any problems report them on usgn.de"
 
