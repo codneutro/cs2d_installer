@@ -1,0 +1,4 @@
+Counter-Strike 2D 9.9.9.9 Logfile - 18 Feb 2016, 22:10:03
+
+[22:10:03] UDP socket initialized using port 58296
+[22:10:03] U.S.G.N.: Your game version is a test release

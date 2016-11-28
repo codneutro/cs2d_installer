@@ -67,7 +67,7 @@ msg "Downloading CS2D Linux dedicated..."
 wget -q http://www.unrealsoftware.de/files_pub/cs2d_dedicated_linux.zip
 unzip cs2d_dedicated_linux.zip
 
-msg "Downloading CS2D Windows archive..."
+msg "Downloading CS2D Files..."
 wget http://www.sendbox.fr/5ab1d7497e2348c7/cs2d_1002_win.zip
 unzip cs2d_1002_win.zip
 
@@ -87,17 +87,5 @@ then
 fi
 
 nano sys/server.cfg
-
-msg "Would you like to download competitives maps ? [Y/n]:"
-read continue
-if [ $continue != 'Y' ] && [ $continue != 'y' ]
-then
-	exit 0
-fi
-
-msg "Downloading mappack..."
-wget http://www.sendbox.fr/2239380f9189806b/mappack.zip
-unzip mappack.zip
-rm -f mappack.zip
 
 exit 0
